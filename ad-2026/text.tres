@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://cjeh8x1x2ab4"]
+
+[ext_resource type="FontFile" uid="uid://cmmk8t7325wn8" path="res://assets/Matcha Style.otf" id="1_lgmnm"]
+
+[resource]
+RichTextLabel/font_sizes/normal_font_size = 20
+RichTextLabel/fonts/normal_font = ExtResource("1_lgmnm")
