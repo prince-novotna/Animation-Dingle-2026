@@ -5,17 +5,56 @@
 
 [node name="call_scene" type="Node2D" unique_id=872838736]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=915556679]
+[node name="bg_canvas" type="CanvasLayer" parent="." unique_id=915556679]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=447330123]
+[node name="background_room" type="TextureRect" parent="bg_canvas" unique_id=447330123]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 171.99998
+offset_top = 64.0
+offset_right = 172.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_wtcfe")
+expand_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="bg_canvas" unique_id=1058362324]
+z_index = -1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_wtcfe")
-expand_mode = 2
+color = Color(0.28453398, 0.28838828, 0.29991964, 1)
 
-[node name="character" parent="." unique_id=943619037 instance=ExtResource("2_0e48y")]
-position = Vector2(543, 390)
+[node name="character_canvas" type="CanvasLayer" parent="." unique_id=252479457]
+
+[node name="Control" type="Control" parent="character_canvas" unique_id=294153990]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="character" parent="character_canvas/Control" unique_id=943619037 instance=ExtResource("2_0e48y")]
+position = Vector2(-270, -284)
+scale = Vector2(0.5, 0.5)
+
+[node name="dialogue_box" type="PanelContainer" parent="character_canvas" unique_id=473009435]
+custom_minimum_size = Vector2(0, 160)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
