@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s4hp4qojijm1"
-path="res://.godot/imported/single bedroom.jpg-c3bb11483b0e2284f16465ac0e225d34.ctex"
+uid="uid://b8nw4hyh0swpo"
+path="res://.godot/imported/amber_dark2_norm.png-1deff505b0e83d135a3591227837519f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://single bedroom.jpg"
-dest_files=["res://.godot/imported/single bedroom.jpg-c3bb11483b0e2284f16465ac0e225d34.ctex"]
+source_file="res://assets/sprite/amber_dark2_norm.png"
+dest_files=["res://.godot/imported/amber_dark2_norm.png-1deff505b0e83d135a3591227837519f.ctex"]
 
 [params]
 

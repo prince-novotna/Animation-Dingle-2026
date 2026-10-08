@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://clk5fty2uioc8"]
+
+[ext_resource type="Texture2D" uid="uid://s4hp4qojijm1" path="res://assets/single bedroom.jpg" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://bpb45hyddo70e" path="res://character.tscn" id="2_0e48y"]
+
+[node name="call_scene" type="Node2D" unique_id=872838736]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=915556679]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=447330123]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wtcfe")
+expand_mode = 2
+
+[node name="character" parent="." unique_id=943619037 instance=ExtResource("2_0e48y")]
+position = Vector2(543, 390)

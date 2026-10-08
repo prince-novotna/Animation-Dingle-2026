@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bpb45hyddo70e"]
+
+[ext_resource type="Texture2D" uid="uid://do8icmmaaoswc" path="res://assets/sprite/amber_blush3_norm.png" id="1_wfnr8"]
+[ext_resource type="Texture2D" uid="uid://b8nw4hyh0swpo" path="res://assets/sprite/amber_dark2_norm.png" id="2_px5sl"]
+[ext_resource type="Texture2D" uid="uid://c1j1kqpnibd37" path="res://assets/sprite/amber_smile_norm.png" id="3_0qfo5"]
+[ext_resource type="Texture2D" uid="uid://b20c2j3km2alv" path="res://assets/sprite/amber_upset_norm.png" id="4_yxww1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_saqji"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wfnr8")
+}],
+"loop": 1,
+"name": &"blush",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_px5sl")
+}],
+"loop": 1,
+"name": &"dark",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0qfo5")
+}],
+"loop": 1,
+"name": &"smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_yxww1")
+}],
+"loop": 1,
+"name": &"upset",
+"speed": 5.0
+}]
+
+[node name="character" type="Node2D" unique_id=943619037]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=786956084]
+position = Vector2(562, 113)
+sprite_frames = SubResource("SpriteFrames_saqji")
+animation = &"smile"
