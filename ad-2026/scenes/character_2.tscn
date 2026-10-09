@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://uhslfi4ee4x1"]
+
+[ext_resource type="SpriteFrames" uid="uid://dx0cmb5viab0p" path="res://resources/sprite2.tres" id="1_q2lpl"]
+
+[node name="character2" type="Node2D" unique_id=1135698105]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=515854185]
+sprite_frames = ExtResource("1_q2lpl")
+animation = &"white"

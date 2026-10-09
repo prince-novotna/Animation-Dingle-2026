@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i2mkijotjg25"
-path="res://.godot/imported/lounge.jpg-2d294a775208efac5299fe2497877edf.ctex"
+uid="uid://cri63ggmlnyd4"
+path="res://.godot/imported/maihi_showcase3.png-3c2a6e5bbe0fd6df838089db8bdd278a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/lounge.jpg"
-dest_files=["res://.godot/imported/lounge.jpg-2d294a775208efac5299fe2497877edf.ctex"]
+source_file="res://assets/sprite2/maihi_showcase3.png"
+dest_files=["res://.godot/imported/maihi_showcase3.png-3c2a6e5bbe0fd6df838089db8bdd278a.ctex"]
 
 [params]
 
