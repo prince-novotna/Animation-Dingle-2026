@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://s4hp4qojijm1" path="res://assets/single bedroom.jpg" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://bpb45hyddo70e" path="res://character.tscn" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://i2mkijotjg25" path="res://assets/lounge.jpg" id="2_0hol4"]
 [ext_resource type="PackedScene" uid="uid://x4jnwr3cpwdl" path="res://dialogue_ui.tscn" id="3_epypp"]
 
 [node name="call_scene" type="Node2D" unique_id=872838736]
@@ -13,14 +14,28 @@ layer = -1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 171.99998
-offset_top = 64.0
-offset_right = 172.0
-offset_bottom = 64.0
+offset_left = 69.99999
+offset_top = 131.0
+offset_right = 70.0
+offset_bottom = 131.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.7, 0.7)
+scale = Vector2(0.42, 0.42)
 texture = ExtResource("1_wtcfe")
+expand_mode = 2
+
+[node name="background_room2" type="TextureRect" parent="bg_canvas" unique_id=1591928152]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 597.9999
+offset_top = 131.0
+offset_right = 597.9999
+offset_bottom = 131.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("2_0hol4")
 expand_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="bg_canvas" unique_id=1058362324]
@@ -36,19 +51,16 @@ color = Color(0.28453398, 0.28838828, 0.29991964, 1)
 
 [node name="Control" type="Control" parent="character_canvas" unique_id=294153990]
 layout_mode = 3
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
 offset_top = -40.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
+offset_right = 23.0
+grow_vertical = 2
 
 [node name="character" parent="character_canvas/Control" unique_id=943619037 instance=ExtResource("2_0e48y")]
-position = Vector2(-270, -284)
-scale = Vector2(0.5, 0.5)
+position = Vector2(152.00002, 4.000061)
+scale = Vector2(0.3, 0.3)
 
 [node name="dialogue_ui" parent="character_canvas" unique_id=502657392 instance=ExtResource("3_epypp")]
