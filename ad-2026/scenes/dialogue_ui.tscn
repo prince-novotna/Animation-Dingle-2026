@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://cjeh8x1x2ab4" path="res://resources/text.tres" id="1_jx1sv"]
 [ext_resource type="Theme" uid="uid://dwepdudwggqxe" path="res://resources/dialogue_box.tres" id="2_e6usr"]
+[ext_resource type="Script" uid="uid://m7pqooljj2gh" path="res://scripts/dialogue_ui.gd" id="2_imsod"]
 [ext_resource type="FontFile" uid="uid://cmmk8t7325wn8" path="res://assets/Matcha Style.otf" id="3_imsod"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g8a23"]
@@ -20,6 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_jx1sv")
+script = ExtResource("2_imsod")
 
 [node name="dialogue_box" type="PanelContainer" parent="." unique_id=1440190766]
 custom_minimum_size = Vector2(0, 160)
@@ -33,7 +35,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("2_e6usr")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="dialogue_box" unique_id=636690831]
+[node name="dialogue_line" type="RichTextLabel" parent="dialogue_box" unique_id=636690831]
+unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "[wave]Hi![/wave] I'm Weather Carl!"
@@ -50,7 +53,8 @@ grow_vertical = 0
 theme = ExtResource("2_e6usr")
 theme_override_styles/panel = SubResource("StyleBoxFlat_g8a23")
 
-[node name="Label" type="Label" parent="speaker_box" unique_id=406112858]
+[node name="speaker_name" type="Label" parent="speaker_box" unique_id=406112858]
+unique_name_in_owner = true
 layout_mode = 2
 text = "<Weather Carl>"
 label_settings = SubResource("LabelSettings_saqji")

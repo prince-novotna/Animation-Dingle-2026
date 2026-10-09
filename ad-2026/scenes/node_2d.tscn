@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://clk5fty2uioc8"]
 
-[ext_resource type="Texture2D" path="res://assets/single bedroom.jpg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://s4hp4qojijm1" path="res://assets/backgrounds/single bedroom.jpg" id="1_4vge2"]
 [ext_resource type="PackedScene" uid="uid://bpb45hyddo70e" path="res://scenes/character.tscn" id="2_0e48y"]
-[ext_resource type="Texture2D" path="res://assets/lounge.jpg" id="2_0hol4"]
+[ext_resource type="Texture2D" uid="uid://i2mkijotjg25" path="res://assets/backgrounds/lounge.jpg" id="2_04qyp"]
 [ext_resource type="PackedScene" uid="uid://x4jnwr3cpwdl" path="res://scenes/dialogue_ui.tscn" id="3_epypp"]
 
 [node name="call_scene" type="Node2D" unique_id=872838736]
@@ -21,7 +21,7 @@ offset_bottom = 131.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.42, 0.42)
-texture = ExtResource("1_wtcfe")
+texture = ExtResource("1_4vge2")
 expand_mode = 2
 
 [node name="background_room2" type="TextureRect" parent="bg_canvas" unique_id=1591928152]
@@ -35,7 +35,7 @@ offset_bottom = 131.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.42, 0.42)
-texture = ExtResource("2_0hol4")
+texture = ExtResource("2_04qyp")
 expand_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="bg_canvas" unique_id=1058362324]
